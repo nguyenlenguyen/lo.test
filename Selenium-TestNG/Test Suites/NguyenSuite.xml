@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--<suite name="QTium" parallel="tests">-->
+<suite name="QTium">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="com.logigear.testng.QTiumMethodListener" />
+        <listener class-name="com.logigear.testng.QTiumTestListener" />
+        <listener class-name="com.logigear.testng.QTiumTestSuiteListener" />
+    </listeners>
+
+    <parameter name="log4j" value="true" />
+
+    <test name="TopPageHeaderVerificationWithSignIn MY Firefox">
+        <parameter name="device" value="pc">
+            <provider name="selenium" apptype="Firefox"></provider>
+        </parameter>
+
+        <parameter name="variation" value="MY" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.my" ></parameter>
+        <parameter name="username" value="nguyenlenguyen@gmail.com" ></parameter>
+        <parameter name="password" value="logigear" ></parameter>
+
+        <classes>
+            <class name="rakuten.TopPageHeaderVerificationWithSignIn"></class>
+        </classes>
+    </test>
+
+    <test name="TopPageHeaderVerificationWithSignIn ID Firefox">
+        <parameter name="device" value="pc">
+            <provider name="selenium" apptype="Firefox"></provider>
+        </parameter>
+
+        <parameter name="variation" value="ID" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.id" ></parameter>
+        <parameter name="username" value="nguyenlenguyen@gmail.com" ></parameter>
+        <parameter name="password" value="logigear" ></parameter>
+
+        <classes>
+            <class name="rakuten.TopPageHeaderVerificationWithSignIn"></class>
+        </classes>
+    </test>
+
+    <test name="TopPageHeaderVerificationWithSignIn ES Firefox">
+        <parameter name="device" value="pc">
+            <provider name="selenium" apptype="Firefox"></provider>
+        </parameter>
+
+        <parameter name="variation" value="ES" ></parameter>
+        <parameter name="url" value="http://www.rakuten.es" ></parameter>
+        <parameter name="username" value="nguyenlenguyen@gmail.com" ></parameter>
+        <parameter name="password" value="logigear" ></parameter>
+
+        <classes>
+            <class name="rakuten.TopPageHeaderVerificationWithSignIn"></class>
+        </classes>
+    </test>
+
+    <test name="TopPageHeaderVerificationWithSignIn SG Firefox">
+        <parameter name="device" value="pc">
+            <provider name="selenium" apptype="Firefox"></provider>
+        </parameter>
+
+        <parameter name="variation" value="SG" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.sg" ></parameter>
+        <parameter name="username" value="nguyenlenguyen@gmail.com" ></parameter>
+        <parameter name="password" value="logigear" ></parameter>
+
+        <classes>
+            <class name="rakuten.TopPageHeaderVerificationWithSignIn"></class>
+        </classes>
+    </test>
+
+    <test name="TopPageHeaderVerificationWithSignIn UK Firefox">
+        <parameter name="device" value="pc">
+            <provider name="selenium" apptype="Firefox"></provider>
+        </parameter>
+
+        <parameter name="variation" value="UK" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.uk" ></parameter>
+        <parameter name="username" value="nguyenlenguyen@gmail.com" ></parameter>
+        <parameter name="password" value="logigear" ></parameter>
+
+        <classes>
+            <class name="rakuten.TopPageHeaderVerificationWithSignIn"></class>
+        </classes>
+    </test>
+
+</suite> 

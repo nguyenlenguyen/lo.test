@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QTium" parallel="tests"> <!--  thread-count="5"> -->
+<!-- <suite name="QTium"> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener" />
+		<listener class-name="com.logigear.testng.QTiumTestListener" />
+		<listener class-name="com.logigear.testng.QTiumTestSuiteListener" />
+	</listeners>
+
+	<parameter name="log4j" value="true" />
+
+	<!-- <test name="Sample running on Windows - Chrome"> <parameter name="device" 
+		value="pc"> <provider name="selenium" apptype="chrome"> <driverexe>E:\Workspace\Eclipse 
+		workspace\Qtium Framework\Selenium-TestNG\Resources\chromedriver.exe</driverexe> 
+		</provider> </parameter> <parameter name="grid" value="0"> <ip>192.168.191.72</ip> 
+		<port>4444</port> </parameter> <classes> <class name="ScrumBoard.FunctionalTests.QTiumDemo"> 
+		</class> </classes> </test> -->
+
+	<!-- <test name="Selenium - TestNG - FireFox"> <parameter name="device" 
+		value="pc"> <provider name="selenium" apptype="firefox"> </provider> </parameter> 
+		<parameter name="grid" value="0"> <ip>192.168.191.72</ip> <port>4444</port> 
+		</parameter> <classes> <class name="ScrumBoard.FunctionalTests.QTiumDemo"> 
+		</class> </classes> </test> -->
+
+	<test name="Selenium - TestNG - FireFox on Windows">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="MY" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.my" ></parameter>
+        <parameter name="username" value="nguyenlenguyen@gmail.com" ></parameter>
+        <parameter name="password" value="logigear" ></parameter>
+
+		<classes>
+			<class name="rakuten.TopPageHeaderVerificationWithoutSignIn"></class>
+		</classes>
+	</test>
+
+    <!-- <test name="Selenium - TestNG - Chrome on Windows">
+        <parameter name="device" value="pc">
+            <provider name="selenium" apptype="chrome">
+                <driverexe>D:\Project\SWDPRERAKUTEN\Framework\Selenium-TestNG\Resources\chromedriver.exe</driverexe>
+            </provider>
+        </parameter>
+
+        <parameter name="variation" value="URL1"></parameter>
+
+        <parameter name="grid" value="0">
+            <ip>192.168.191.72</ip>
+            <port>4444</port>
+        </parameter>
+
+        <classes>
+            <class name="ScrumBoard.FunctionalTests.QTiumDemo">
+                <methods>
+                    <exclude name=""></exclude>
+                    <include name="TC001_Sign_In_Layout"></include>
+                    <include name="TC003_User_cannot_sign_in_with_invalid_credentials"></include>
+                    <include name="TC004_Sign_in_successfully_with_valid_credentials"></include>
+                    <include name="TC005_Create_Issue_Layout"></include>
+                    <include name="TC006_Create_issue_with_invalid_inputs_for_required_fields"></include>
+                    <include name="TC007_Create_issue_with_valid_inputs_for_required_fields_successfully"></include>
+                    <include name="TC008_User_can_edit_existing_issue_successfully"></include>
+                    <include name="TC009_User_can_delete_existing_issue_successfully"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> -->
+	
+	
+	<!-- <test name="Selenium - TestNG - Chrome on Windows">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="chrome">
+				<driverexe>D:\Project\SWDPRERAKUTEN\Framework\Selenium-TestNG\Resources\chromedriver.exe</driverexe>
+			</provider>
+		</parameter>
+		
+		<parameter name="variation" value="" ></parameter>
+		<parameter name="url" value="http://www.rakuten.co.uk" ></parameter>
+		<parameter name="username" value="test.rakuten.uk@gmail.com" ></parameter>
+		<parameter name="password" value="rakuten01" ></parameter>
+		
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+		<classes>
+			<class name="rakuten.AccountVerification">
+				<methods>
+					<exclude name=""></exclude>
+					<include name="TC001_Open_My_Account"></include>					
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+	<!--<test name="Selenium - TestNG - Chrome on Windows">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="chrome">
+				<driverexe>D:\Project\SWDPRERAKUTEN\Framework\Selenium-TestNG\Resources\chromedriver.exe</driverexe>
+			</provider>
+		</parameter>
+		
+		<parameter name="variation" value="ES" ></parameter>
+		<parameter name="url" value="http://www.rakuten.es" ></parameter>
+		<parameter name="username" value="test.rakuten@gmail.com" ></parameter>
+		<parameter name="password" value="rakuten01" ></parameter>
+		
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+		<classes>
+			<class name="rakuten.AccountVerification">
+				<methods>
+					<exclude name=""></exclude>
+					<include name="TC001_Open_My_Account"></include>					
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	
+</suite> 

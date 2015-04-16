@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QTium">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener"/>
+		<listener class-name="com.logigear.testng.QTiumTestListener"/>
+	</listeners>
+	<test name="Selenium - TestNG - FireFox on Windows">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="ID" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.id" ></parameter>
+        <parameter name="username" value="test.rakuten26@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.AccountVerification"></class>
+		</classes>
+	</test>
+</suite> 

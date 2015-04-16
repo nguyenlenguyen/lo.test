@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [QTium]" parallel="tests">
+  <parameter name="password" value="rakuten01"/>
+  <parameter name="grid" value="0"/>
+  <parameter name="device" value="android"/>
+  <parameter name="variation" value=""/>
+  <parameter name="url" value="http://www.rakuten.es"/>
+  <parameter name="log4j" value="true"/>
+  <parameter name="username" value="test.rakuten@gmail.com"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.logigear.testng.QTiumMethodListener"/>
+    <listener class-name="com.logigear.testng.QTiumTestListener"/>
+    <listener class-name="com.logigear.testng.QTiumTestSuiteListener"/>
+  </listeners>
+  <test name="Selenium - TestNG - FireFox on Windows(failed)" parallel="tests">
+    <parameter name="password" value="rakuten01"/>
+    <parameter name="grid" value="0"/>
+    <parameter name="device" value="android"/>
+    <parameter name="variation" value=""/>
+    <parameter name="url" value="http://www.rakuten.es"/>
+    <parameter name="username" value="test.rakuten@gmail.com"/>
+    <classes>
+      <class name="rakuten.PointClubVerification_M">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TC_Point_Club_Verification" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- rakuten.PointClubVerification_M -->
+    </classes>
+  </test> <!-- Selenium - TestNG - FireFox on Windows(failed) -->
+</suite> <!-- Failed suite [QTium] -->

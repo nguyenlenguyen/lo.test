@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PointClubVerification" parallel=""> <!--  thread-count="5"> -->
+<!-- <suite name="QTium"> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener" />
+		<listener class-name="com.logigear.testng.QTiumTestListener" />
+		<listener class-name="com.logigear.testng.QTiumTestSuiteListener" />
+	</listeners>
+
+	<parameter name="log4j" value="true" />	
+
+	<!-- <test name="FireFox on Windows - ID">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.id" ></parameter>
+        <parameter name="username" value="test.rakuten26@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test> 
+
+       <test name="FireFox on Windows - MY">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.my" ></parameter>
+        <parameter name="username" value="test.rakuten25@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="FireFox on Windows - ES">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.es" ></parameter>
+        <parameter name="username" value="test.rakuten@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="FireFox on Windows - TW">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="TW" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.tw" ></parameter>
+        <parameter name="username" value="test.rakuten.tw@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="FireFox on Windows - UK">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.uk" ></parameter>
+        <parameter name="username" value="test.rakuten.uk@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="FireFox on Windows - SG">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.sg" ></parameter>
+        <parameter name="username" value="test.rakuten.sg@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="Chrome on Windows - ID">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="Chrome">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.id" ></parameter>
+        <parameter name="username" value="test.rakuten26@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test> 
+
+       <test name="Chrome on Windows - MY">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="Chrome">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.my" ></parameter>
+        <parameter name="username" value="test.rakuten25@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="Chrome on Windows - ES">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="Chrome">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.es" ></parameter>
+        <parameter name="username" value="test.rakuten@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="Chrome on Windows - TW">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="Chrome">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="TW" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.tw" ></parameter>
+        <parameter name="username" value="test.rakuten.tw@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="Chrome on Windows - UK">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="Chrome">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.uk" ></parameter>
+        <parameter name="username" value="test.rakuten.uk@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="Chrome on Windows - SG">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="Chrome">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.sg" ></parameter>
+        <parameter name="username" value="test.rakuten.sg@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test> -->
+    
+    <!-- <test name="IE on Windows - ID">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="IE">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.id" ></parameter>
+        <parameter name="username" value="test.rakuten26@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	 </test>  -->
+
+       <!-- <test name="IE on Windows - MY">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="IE">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.my" ></parameter>
+        <parameter name="username" value="test.rakuten25@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="IE on Windows - ES">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="IE">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.es" ></parameter>
+        <parameter name="username" value="test.rakuten@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+    
+    <test name="IE on Windows - TW">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="IE">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="TW" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.tw" ></parameter>
+        <parameter name="username" value="test.rakuten.tw@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test> -->
+    
+    <!-- <test name="IE on Windows - UK">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="IE">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.uk" ></parameter>
+        <parameter name="username" value="test.rakuten.uk@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test> -->
+    
+    <test name="IE on Windows - SG">
+		<parameter name="device" value="pc">
+			<provider name="selenium" apptype="IE">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.com.sg" ></parameter>
+        <parameter name="username" value="test.rakuten.sg@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.PointClubVerification"></class>
+		</classes>
+	</test>
+</suite> 

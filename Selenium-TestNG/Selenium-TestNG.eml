@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="guice-3.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/guice-3.0.jar!/"/>
+	</lib>
+	<lib name="log4j-1.2.16.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/log4j-1.2.16.jar!/"/>
+	</lib>
+	<lib name="org.testng.eclipse_6.2.0.20110905_0934.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/org.testng.eclipse_6.2.0.20110905_0934.jar!/"/>
+	</lib>
+	<lib name="reportng-1.1.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/reportng-1.1.4.jar!/"/>
+	</lib>
+	<lib name="velocity-dep-1.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/velocity-dep-1.4.jar!/"/>
+	</lib>
+	<lib name="java-client-1.4.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/java-client-1.4.0.jar!/"/>
+	</lib>
+	<lib name="gson-2.2.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/gson-2.2.4.jar!/"/>
+	</lib>
+	<lib name="selenium-java-2.45.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/selenium-java-2.45.0.jar!/"/>
+	</lib>
+	<lib name="selenium-server-standalone-2.45.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/selenium-server-standalone-2.45.0.jar!/"/>
+	</lib>
+	<lib name="javax.inject.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/javax.inject.jar!/"/>
+	</lib>
+	<lib name="javassist-3.9.0.GA.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/javassist-3.9.0.GA.jar!/"/>
+	</lib>
+	<lib name="com.springsource.org.aopalliance-1.0.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/com.springsource.org.aopalliance-1.0.0.jar!/"/>
+	</lib>
+	<lib name="jxl.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Selenium-TestNG/Libs/jxl.jar!/"/>
+	</lib>
+</component>

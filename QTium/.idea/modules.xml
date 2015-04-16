@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QTium.iml" filepath="$PROJECT_DIR$/QTium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Selenium-TestNG/Selenium-TestNG.iml" filepath="$PROJECT_DIR$/../Selenium-TestNG/Selenium-TestNG.iml" />
+    </modules>
+  </component>
+</project>

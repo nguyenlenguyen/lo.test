@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QTium" parallel="tests"> <!--  thread-count="5"> -->
+<!-- <suite name="QTium"> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener" />
+		<listener class-name="com.logigear.testng.QTiumTestListener" />
+		<listener class-name="com.logigear.testng.QTiumTestSuiteListener" />
+	</listeners>
+
+	<parameter name="log4j" value="true" />	
+
+	<test name="Selenium - TestNG - FireFox on Windows">
+		<!-- <parameter name="device" value="pc">
+			<provider name="selenium" apptype="ie">
+			</provider>
+		</parameter> -->
+
+		<parameter name="device" value="android">
+			<provider name="appium" apptype="browser">
+				<RemoteAddress>http://127.0.0.1:4723/wd/hub</RemoteAddress> 
+			</provider>
+		</parameter>
+		
+		<parameter name="grid" value="0">
+			<ip>localhost</ip>
+			<port>4444</port>
+		</parameter>
+
+        <parameter name="variation" value="" ></parameter>
+        <parameter name="url" value="http://www.rakuten.co.uk" ></parameter>
+        <parameter name="username" value="test.rakuten.uk@gmail.com" ></parameter>
+        <parameter name="password" value="rakuten01" ></parameter>
+
+		<classes>
+			<class name="rakuten.SignOutVerification"></class>
+		</classes>
+	</test>   	
+</suite> 

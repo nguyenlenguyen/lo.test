@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Selenium - TestNG</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Selenium - TestNG</h1>
+<p>
+  Test duration: 220.105s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="4" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="4" class="group">rakuten.GI_MyAccountverification_v1</td>
+      </tr>
+            
+<tr>
+
+  <td class="method">
+    <a href="javascript:void(0)" onclick="clickHandler(this);" title="Click to expand/collapse">
+                  <span class="description" title="Open My Account">TC001_Open_My_Account</span>
+         </a>
+  </td>
+  
+  <td class="TMDes">Open My Account</td>
+
+  <td class="duration">
+    219.598s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"http://www.rakuten.co.id", "test.rakuten26@gmail.com", "rakuten01"</span><br />
+            
+
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Mulitple failures (24):<br/>
+Failure 1 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertTrue(Assert.java:42)<br/>
+	at org.testng.Assert.assertTrue(Assert.java:52)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyTrue(QTiumAssert.java:13)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyTrue(QTiumAssert.java:26)<br/>
+	at rakuten.MyAccountAction.checkURLOpened(MyAccountAction.java:15)<br/>
+	at rakuten.AccountSettingAction.verifyAccountSettingURL(AccountSettingAction.java:15)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:48)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 2 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:20)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 3 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:22)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 4 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:24)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 5 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:26)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 6 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:28)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 7 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:36)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 8 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AccountSettingAction.CheckControlsExist(AccountSettingAction.java:38)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:49)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 9 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:19)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 10 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:21)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 11 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:23)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 12 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:25)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 13 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:27)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 14 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:29)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 15 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.ContactSettingAction.CheckControlsExist(ContactSettingAction.java:31)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:52)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 16 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.PasswordSettingAction.CheckControlsExist(PasswordSettingAction.java:18)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:55)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 17 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.PasswordSettingAction.CheckControlsExist(PasswordSettingAction.java:20)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:55)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 18 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.PasswordSettingAction.CheckControlsExist(PasswordSettingAction.java:24)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:55)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 19 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.PasswordSettingAction.CheckControlsExist(PasswordSettingAction.java:28)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:55)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 20 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.CreditCardInformationSettingAction.CheckControlsExist(CreditCardInformationSettingAction.java:19)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:58)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 21 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AddNewCardAction.CheckControlsExist(AddNewCardAction.java:18)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:61)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 22 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AddNewCardAction.CheckControlsExist(AddNewCardAction.java:20)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:61)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 23 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
+	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br/>
+	at com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br/>
+	at rakuten.AddNewCardAction.CheckControlsExist(AddNewCardAction.java:26)<br/>
+	at rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:61)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 24 of 24<br/>
+java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertEquals(Assert.java:123)<br />
+              org.testng.Assert.assertEquals(Assert.java:165)<br />
+              com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:54)<br />
+              com.logigear.selenium.QTiumAssert.verifyEquals(QTiumAssert.java:67)<br />
+              rakuten.AddNewCardAction.CheckControlsExist(AddNewCardAction.java:32)<br />
+              rakuten.GI_MyAccountverification_v1.TC001_Open_My_Account(GI_MyAccountverification_v1.java:61)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>
